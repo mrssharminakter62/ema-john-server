@@ -62,12 +62,6 @@ app.post('/addOrder', (req, res) =>{
 
 })
 
-
-
-
 });
 
-
-app.listen(port, () => {
-  console.log('Hello Bangladesh')
-})
+app.listen(process.env.PORT || port)
